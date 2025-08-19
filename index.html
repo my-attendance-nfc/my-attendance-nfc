@@ -16,8 +16,8 @@
 
     if (uid) {
       // Run attendance log in background
-      fetch('https://script.google.com/macros/s/AKfycbwlJaNiwpI54P_uni52m1g8Ag4aEfg2Lf0RYHAMz9JgcUYij2AYtHbUzW47EKwitcWW9A/exec?uid=' + uid)
-        .then(() => {
+      fetch('https://script.google.com/macros/s/AKfycbzWuaaeIcEqSLISfJbUr0uBcKFdUVzpTNPBdnmHyg0rfD5DyuwoGihbUZ6D4D3bKqRCmA/exec?uid=' + uid)
+              .then(() => {
           document.getElementById('status').textContent = 'Kehadiran berhasil dicatat!';
         })
         .catch(err => {
