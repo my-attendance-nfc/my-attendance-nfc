@@ -17,7 +17,7 @@
     if (uid) {
       // Run attendance log in background
       fetch('https://script.google.com/macros/s/AKfycbzWuaaeIcEqSLISfJbUr0uBcKFdUVzpTNPBdnmHyg0rfD5DyuwoGihbUZ6D4D3bKqRCmA/exec?uid=' + uid)
-              .then(() => {
+                     .then(() => {
           document.getElementById('status').textContent = 'Kehadiran berjaya direkod!';
         })
         .catch(err => {
