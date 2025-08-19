@@ -16,7 +16,7 @@
 
     if (uid) {
       // Run attendance log in background
-      fetch('https://script.google.com/macros/s/AKfycbzWuaaeIcEqSLISfJbUr0uBcKFdUVzpTNPBdnmHyg0rfD5DyuwoGihbUZ6D4D3bKqRCmA/exec?uid=' + uid)
+      fetch('https://script.google.com/macros/s/AKfycbwducCJVVu9I-5DyP4CiAkoZhPd_YE236XhArERTGFQ47yWgLiO2ffje2KI3aQlphzj/exec?uid=' + uid)
                      .then(() => {
           document.getElementById('status').textContent = 'Berjaya direkod!';
         })
