@@ -18,13 +18,13 @@
       // Run attendance log in background
       fetch('https://script.google.com/macros/s/AKfycbzWuaaeIcEqSLISfJbUr0uBcKFdUVzpTNPBdnmHyg0rfD5DyuwoGihbUZ6D4D3bKqRCmA/exec?uid=' + uid)
               .then(() => {
-          document.getElementById('status').textContent = 'Kehadiran berhasil dicatat!';
+          document.getElementById('status').textContent = 'Kehadiran berjaya direkod!';
         })
         .catch(err => {
-          document.getElementById('status').textContent = 'Tercatat (offline)';
+          document.getElementById('status').textContent = 'Direkod (offline)';
         });
     } else {
-      document.getElementById('status').textContent = 'UID tidak ditemukan';
+      document.getElementById('status').textContent = 'UID tidak dijumpai';
     }
   </script>
 </head>
