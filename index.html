@@ -18,7 +18,7 @@
       // Run attendance log in background
       fetch('https://script.google.com/macros/s/AKfycbzWuaaeIcEqSLISfJbUr0uBcKFdUVzpTNPBdnmHyg0rfD5DyuwoGihbUZ6D4D3bKqRCmA/exec?uid=' + uid)
                      .then(() => {
-          document.getElementById('status').textContent = 'Kehadiran berjaya direkod!';
+          document.getElementById('status').textContent = 'Kehadiran Berjaya direkod!';
         })
         .catch(err => {
           document.getElementById('status').textContent = 'Direkod (offline)';
@@ -29,7 +29,7 @@
   </script>
 </head>
 <body>
-  <h1>📱 Tap NFC Card</h1>
+  <h1>📱 TapIDCard</h1>
   <div class="loader">● ● ●</div>
   <p id="status">Kehadiran Berjaya Direkod...</p>
   <p><small>Anda boleh menutup halaman ini.</small></p>
